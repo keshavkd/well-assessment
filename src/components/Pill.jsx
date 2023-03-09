@@ -1,15 +1,12 @@
 import React from "react";
 
-function Pill({ btnSize, btnType, btnClickHandler, btnContent, btnPrefix }) {
+function Pill({ btnSize, btnType, btnContent, btnPrefix }) {
   return (
     <div className="pill">
-      <button
-        className={`btn-${btnType} btn-${btnSize}`}
-        onClick={() => btnClickHandler()}
-      >
+      <div className={`btn-${btnType} btn-${btnSize}`}>
         {btnPrefix && <div className="btn-prefix">{btnPrefix}</div>}
-        {btnContent}
-      </button>
+        <div className="pill-content">{btnContent}</div>
+      </div>
     </div>
   );
 }
