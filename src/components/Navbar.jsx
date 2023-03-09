@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(true);
-
   function handleViewportChange() {
     const navbar = document.getElementById("nav-bar");
     const logo = document.getElementById("logo");
